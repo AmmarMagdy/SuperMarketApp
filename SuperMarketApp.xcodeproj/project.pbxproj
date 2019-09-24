@@ -12,6 +12,12 @@
 		4430D05722B6B15300B3B686 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4430D05522B6B15300B3B686 /* Main.storyboard */; };
 		4430D05922B6B15500B3B686 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4430D05822B6B15500B3B686 /* Assets.xcassets */; };
 		4430D05C22B6B15500B3B686 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4430D05A22B6B15500B3B686 /* LaunchScreen.storyboard */; };
+		444A3F1D22BFEB300049710B /* ItemDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444A3F1C22BFEB300049710B /* ItemDetailsViewController.swift */; };
+		44EB6E9922BE50C9005894B7 /* SuperMarketItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EB6E9822BE50C9005894B7 /* SuperMarketItems.swift */; };
+		44EB6E9D22BE71A2005894B7 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EB6E9C22BE71A2005894B7 /* SecondViewController.swift */; };
+		44EB6E9F22BE7471005894B7 /* SuperMarketCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EB6E9E22BE7471005894B7 /* SuperMarketCell.swift */; };
+		44EB6EA522BED49C005894B7 /* SuperMarketXIBCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EB6EA322BED49C005894B7 /* SuperMarketXIBCell.swift */; };
+		44EB6EA622BED49C005894B7 /* SuperMarketXIBCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44EB6EA422BED49C005894B7 /* SuperMarketXIBCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		4430D05822B6B15500B3B686 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4430D05B22B6B15500B3B686 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4430D05D22B6B15500B3B686 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		444A3F1C22BFEB300049710B /* ItemDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailsViewController.swift; sourceTree = "<group>"; };
+		44EB6E9822BE50C9005894B7 /* SuperMarketItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperMarketItems.swift; sourceTree = "<group>"; };
+		44EB6E9C22BE71A2005894B7 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		44EB6E9E22BE7471005894B7 /* SuperMarketCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperMarketCell.swift; sourceTree = "<group>"; };
+		44EB6EA322BED49C005894B7 /* SuperMarketXIBCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperMarketXIBCell.swift; sourceTree = "<group>"; };
+		44EB6EA422BED49C005894B7 /* SuperMarketXIBCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SuperMarketXIBCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +67,43 @@
 			isa = PBXGroup;
 			children = (
 				4430D05122B6B15300B3B686 /* AppDelegate.swift */,
-				4430D05322B6B15300B3B686 /* ViewController.swift */,
-				4430D05522B6B15300B3B686 /* Main.storyboard */,
-				4430D05822B6B15500B3B686 /* Assets.xcassets */,
-				4430D05A22B6B15500B3B686 /* LaunchScreen.storyboard */,
+				44EB6EA022BE75C6005894B7 /* Controllers */,
+				44EB6EA122BE75DD005894B7 /* Views */,
+				44EB6EA222BE7622005894B7 /* Model */,
 				4430D05D22B6B15500B3B686 /* Info.plist */,
+				4430D05822B6B15500B3B686 /* Assets.xcassets */,
 			);
 			path = SuperMarketApp;
+			sourceTree = "<group>";
+		};
+		44EB6EA022BE75C6005894B7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4430D05322B6B15300B3B686 /* ViewController.swift */,
+				44EB6E9C22BE71A2005894B7 /* SecondViewController.swift */,
+				44EB6E9E22BE7471005894B7 /* SuperMarketCell.swift */,
+				444A3F1C22BFEB300049710B /* ItemDetailsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		44EB6EA122BE75DD005894B7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4430D05522B6B15300B3B686 /* Main.storyboard */,
+				4430D05A22B6B15500B3B686 /* LaunchScreen.storyboard */,
+				44EB6EA322BED49C005894B7 /* SuperMarketXIBCell.swift */,
+				44EB6EA422BED49C005894B7 /* SuperMarketXIBCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		44EB6EA222BE7622005894B7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				44EB6E9822BE50C9005894B7 /* SuperMarketItems.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4430D05C22B6B15500B3B686 /* LaunchScreen.storyboard in Resources */,
+				44EB6EA622BED49C005894B7 /* SuperMarketXIBCell.xib in Resources */,
 				4430D05922B6B15500B3B686 /* Assets.xcassets in Resources */,
 				4430D05722B6B15300B3B686 /* Main.storyboard in Resources */,
 			);
@@ -135,7 +178,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44EB6E9D22BE71A2005894B7 /* SecondViewController.swift in Sources */,
+				44EB6EA522BED49C005894B7 /* SuperMarketXIBCell.swift in Sources */,
+				44EB6E9F22BE7471005894B7 /* SuperMarketCell.swift in Sources */,
 				4430D05422B6B15300B3B686 /* ViewController.swift in Sources */,
+				44EB6E9922BE50C9005894B7 /* SuperMarketItems.swift in Sources */,
+				444A3F1D22BFEB300049710B /* ItemDetailsViewController.swift in Sources */,
 				4430D05222B6B15300B3B686 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

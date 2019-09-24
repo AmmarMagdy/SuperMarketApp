@@ -10,6 +10,11 @@ import UIKit
 
 class SuperMarketXIBCell: UITableViewCell {
 
+    @IBOutlet weak var itemTitle: UILabel!
+    @IBOutlet weak var itemDesc: UILabel!
+    @IBOutlet weak var itemPrice: UILabel!
+    @IBOutlet weak var itemImage: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -19,6 +24,13 @@ class SuperMarketXIBCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func configureCell(item: SuperMarketItems) {
+        itemTitle.text = item.title
+        itemDesc.text = item.desc
+        itemPrice.text = "\(item.price)"
+        itemImage.image = UIImage(named: item.image)
     }
     
 }

@@ -15,7 +15,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet weak var superMarketLabel: UILabel!
     @IBOutlet weak var superMarketTable: UITableView!
     
-    var superMarketItems = [SuperMarketItems]()
+   
     
     var sectionsItems = ["fast Food", "fruits"]
     var fastFoodItems = ["KFC","Koshary","Fries"]
@@ -25,13 +25,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         superMarketTable.tableFooterView = UIView()
-        
-        superMarketItems.append(SuperMarketItems(title:"KFC", desc: "I love KFC", image: "KFC", price: 50.30))
-        superMarketItems.append(SuperMarketItems(title:"Koshary", desc: "Koshary is hot", image: "Koshary", price: 15.0))
-        superMarketItems.append(SuperMarketItems(title:"Fries", desc: "Fries is good", image: "Fries", price: 5.0))
-        superMarketItems.append(SuperMarketItems(title:"Banana", desc: "I love Banana", image: "Banana", price: 50.30))
-        superMarketItems.append(SuperMarketItems(title:"Mango", desc: "I love Mango", image: "Mango", price: 20.25))
-        superMarketItems.append(SuperMarketItems(title:"KFC", desc: "watermelon is cold", image: "WaterMelon", price: 40.30))
 //        superMarketTable.dataSource = self
 //        superMarketTable.delegate = self
     }
